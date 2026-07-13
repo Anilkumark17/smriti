@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Typography */
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-display: 'Lexend', var(--font);
+
+  /* Neutrals */
+  --gray-25: #fcfcfd;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-150: #ececee;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #101828;
+
+  --bg: var(--gray-50);
+  --surface: #ffffff;
+  --surface-alt: var(--gray-25);
+  --border: var(--gray-200);
+  --border-strong: var(--gray-300);
+
+  --text: var(--gray-600);
+  --text-light: var(--gray-500);
+  --text-heading: var(--gray-900);
+  --text-on-dark: #f4f4f6;
+
+  /* Brand */
+  --primary: #4f46e5;
+  --primary-dark: #4338ca;
+  --primary-light: #eef2ff;
+  --primary-ring: rgba(79, 70, 229, 0.16);
+
+  --secondary: #0f766e;
+  --secondary-light: #ecfdf9;
+
+  --accent: #7c3aed;
+  --accent-light: #f5f0ff;
+
+  --grandchild: #2563eb;
+  --grandchild-light: #eff4ff;
+  --elder: #c2540a;
+  --elder-light: #fef3ea;
+
+  --success: #059669;
+  --success-light: #ecfdf5;
+  --danger: #dc2626;
+  --danger-light: #fef2f2;
+
+  /* Elevation */
+  --shadow-xs: 0 1px 2px rgba(16, 24, 40, 0.05);
+  --shadow-sm: 0 1px 3px rgba(16, 24, 40, 0.08), 0 1px 2px rgba(16, 24, 40, 0.04);
+  --shadow-md: 0 4px 10px -2px rgba(16, 24, 40, 0.08), 0 2px 4px -2px rgba(16, 24, 40, 0.05);
+  --shadow-lg: 0 12px 24px -6px rgba(16, 24, 40, 0.12), 0 4px 8px -4px rgba(16, 24, 40, 0.06);
+  --shadow-focus: 0 0 0 4px var(--primary-ring);
+
+  /* Radius */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 18px;
+  --radius-full: 999px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: var(--font);
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--primary);
+}
+
+svg {
+  display: block;
+}
+
+::selection {
+  background: var(--primary-ring);
+}
+
+/* Scrollbar (WebKit) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-300);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
